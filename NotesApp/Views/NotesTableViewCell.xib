@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" rowHeight="80" id="RVH-8U-NZ1" customClass="NotesTableViewCell" customModule="NotesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RVH-8U-NZ1" id="QEL-mr-czb">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODJ-up-Lth">
+                        <rect key="frame" x="12" y="8" width="370" height="43.666666666666664"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Q0q-f1-BqX">
+                        <rect key="frame" x="12" y="51.666666666666664" width="370" height="20.333333333333336"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="No addational text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbw-Rm-oN0">
+                                <rect key="frame" x="0.0" y="0.0" width="138.66666666666666" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/6/2025" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha6-sk-d7c">
+                                <rect key="frame" x="300" y="0.0" width="70" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ODJ-up-Lth" secondAttribute="trailing" constant="20" id="Mdc-Uk-D1Z"/>
+                    <constraint firstItem="ODJ-up-Lth" firstAttribute="leading" secondItem="QEL-mr-czb" secondAttribute="leading" constant="20" id="QgC-Cv-fwT"/>
+                    <constraint firstItem="Q0q-f1-BqX" firstAttribute="top" secondItem="ODJ-up-Lth" secondAttribute="bottom" id="bS1-Vu-RlC"/>
+                    <constraint firstAttribute="bottom" secondItem="Q0q-f1-BqX" secondAttribute="bottom" constant="8" id="cOv-8p-erC"/>
+                    <constraint firstItem="Q0q-f1-BqX" firstAttribute="leading" secondItem="QEL-mr-czb" secondAttribute="leading" constant="20" id="fG1-2d-KHj"/>
+                    <constraint firstAttribute="trailing" secondItem="Q0q-f1-BqX" secondAttribute="trailing" constant="20" id="fa2-qH-Sap"/>
+                    <constraint firstItem="ODJ-up-Lth" firstAttribute="top" secondItem="QEL-mr-czb" secondAttribute="top" constant="8" id="zMf-ZE-y3f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentNote" destination="zbw-Rm-oN0" id="9IE-mr-PeS"/>
+                <outlet property="createAt" destination="ha6-sk-d7c" id="0ai-t6-Mt3"/>
+                <outlet property="titleNote" destination="ODJ-up-Lth" id="aPZ-vk-IK4"/>
+            </connections>
+            <point key="canvasLocation" x="88.549618320610676" y="-99.295774647887328"/>
+        </tableViewCell>
+    </objects>
+</document>
