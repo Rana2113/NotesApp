@@ -17,7 +17,11 @@ A simple iOS note-taking app built using UIKit and CoreData. Notes can be pinned
 ---
 ## 📸 Demo Video
 
-📽️ [Watch the demo](demo.mp4)
+📽️ 
+
+https://github.com/user-attachments/assets/17962152-7d28-425e-8f0b-fecf7bcb9baa
+
+
 
 ---
 ## 🧱 Architecture
